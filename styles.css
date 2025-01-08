@@ -1,0 +1,154 @@
+/* Resetando padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Garantir que o HTML e o body cubram toda a altura da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos principais do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #151829, #25203a); /* Novo gradiente */
+    color: #343f51; /* Cor padrão da letra */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Caixa do conteúdo dentro de um retângulo branco com sombra */
+.container {
+    background-color: white; /* Fundo branco */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 30px; /* Reduzido o padding */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada para destaque */
+    width: 90%;
+    max-width: 700px; /* Limite de largura ajustado */
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+/* Título com o nome Emilly */
+.name {
+    position: relative;
+    font-size: 2rem; /* Tamanho da fonte reduzido */
+    color: #25203a; /* Cor alterada para o título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+/* Estilo do coração flutuante ao lado do nome */
+.heart {
+    margin-left: 10px;
+    font-size: 2rem; /* Reduzido o tamanho do coração */
+    color: #e91e63;
+    animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+/* Animação de batimento do coração */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Texto explicativo */
+p {
+    font-size: 1rem; /* Reduzido o tamanho do texto */
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 15px auto;
+    color: #343f51;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    padding: 0 10px;
+}
+
+/* Estilo do botão */
+button {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adicionando espaçamento abaixo do botão */
+    background-color: #25203a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #25203a
+}
+
+/* Embed do YouTube */
+iframe {
+    width: 100%;
+    height: 35vw;
+    max-width: 700px;
+    max-height: 400px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    .name {
+        font-size: 1.8rem; /* Ajuste do tamanho da fonte */
+    }
+
+    p {
+        font-size: 0.9rem; /* Menor tamanho para telas pequenas */
+    }
+
+    iframe {
+        height: 45vw; /* Ajuste a altura do vídeo para telas menores */
+    }
+}
+
+@media (max-width: 500px) {
+    .name {
+        font-size: 1.6rem; /* Ajuste ainda maior em telas pequenas */
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin: 10px;
+    }
+
+    iframe {
+        height: 50vw; /* Ajuste a altura do vídeo */
+    }
+
+    .heart {
+        font-size: 1.6rem; /* Menor tamanho do coração */
+    }
+}
