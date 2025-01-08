@@ -121,22 +121,30 @@ iframe {
 
 /* Responsividade */
 @media (max-width: 800px) {
+    .container {
+        width: 85%; /* Reduzindo a largura do container para 85% */
+    }
+
     .name {
-        font-size: 1.8rem; /* Ajuste do tamanho da fonte */
+        font-size: 1.8rem;
     }
 
     p {
-        font-size: 0.9rem; /* Menor tamanho para telas pequenas */
+        font-size: 0.9rem;
     }
 
     iframe {
-        height: 45vw; /* Ajuste a altura do vídeo para telas menores */
+        height: 45vw;
     }
 }
 
 @media (max-width: 500px) {
+    .container {
+        width: 90%; /* Largura do container em telas muito pequenas */
+    }
+
     .name {
-        font-size: 1.6rem; /* Ajuste ainda maior em telas pequenas */
+        font-size: 1.6rem;
     }
 
     p {
@@ -145,10 +153,10 @@ iframe {
     }
 
     iframe {
-        height: 50vw; /* Ajuste a altura do vídeo */
+        height: 50vw;
     }
 
     .heart {
-        font-size: 1.6rem; /* Menor tamanho do coração */
+        font-size: 1.6rem;
     }
 }
