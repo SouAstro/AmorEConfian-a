@@ -122,7 +122,7 @@ iframe {
 /* Responsividade */
 @media (max-width: 800px) {
     .container {
-        width: 85%; /* Reduzindo a largura do container para 85% */
+        width: 80%; /* Reduzindo a largura do container para 80% */
     }
 
     .name {
@@ -140,7 +140,7 @@ iframe {
 
 @media (max-width: 500px) {
     .container {
-        width: 90%; /* Largura do container em telas muito pequenas */
+        width: 85%; /* Largura do container em telas muito pequenas */
     }
 
     .name {
